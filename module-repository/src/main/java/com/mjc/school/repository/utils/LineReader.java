@@ -30,6 +30,7 @@ public class LineReader {
             e.printStackTrace();
             return lines;
         }
+        return lines;
     }
     public static LocalDateTime getRandomDate() {
         Random random = new Random();
