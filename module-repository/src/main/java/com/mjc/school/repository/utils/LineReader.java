@@ -35,10 +35,10 @@ public class LineReader {
     public static LocalDateTime getRandomDate() {
         Random random = new Random();
         int year = LocalDateTime.now().getYear()+random.nextInt(10)-10;
-        int month = random.nextInt(12);
-        int day = random.nextInt(28);
-        int hour = random.nextInt(23);
-        int minute = random.nextInt(59);
+        int month = random.nextInt(12)+1;
+        int day = random.nextInt(28)+1;
+        int hour = random.nextInt(23)+1;
+        int minute = random.nextInt(59)+1;
         return LocalDateTime.of(year, Month.of(month), day, hour, minute);
 
     }
