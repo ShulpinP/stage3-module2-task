@@ -13,6 +13,7 @@ import java.util.List;
 
 @Controller
 public class NewsController implements BaseController <NewsDtoRequest, NewsDtoResponse, Long> {
+    private final BaseService<NewsDtoRequest, NewsDtoResponse, Long> newsService;
     @Autowired
     public NewsController(BaseService<NewsDtoRequest, NewsDtoResponse, Long> newsService) {
         this.newsService = newsService;
@@ -24,22 +25,22 @@ public class NewsController implements BaseController <NewsDtoRequest, NewsDtoRe
     }
 
     @Override
-    public Object readById(Long id) {
-        return null;
+    public NewsDtoResponse readById(Long id) {
+        return newsService.readById(id);
     }
 
     @Override
-    public Object create(NewsDtoRequest createRequest) {
-        return null;
+    public NewsDtoResponse create(NewsDtoRequest createRequest) {
+        return newsService.create(createRequest);
     }
 
     @Override
-    public Object update(NewsDtoRequest updateRequest) {
-        return null;
+    public NewsDtoResponse update(NewsDtoRequest updateRequest) {
+        return newsService.update(updateRequest);
     }
 
     @Override
     public boolean deleteById(Long id) {
-        return false;
+        return newsService.deleteById(id);
     }
 }

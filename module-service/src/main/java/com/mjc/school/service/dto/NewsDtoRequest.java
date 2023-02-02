@@ -3,7 +3,6 @@ package com.mjc.school.service.dto;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-
     public class NewsDtoRequest {
         private final Long id;
         private final String title;
@@ -33,4 +32,4 @@ import org.springframework.stereotype.Component;
             return authorId;
         }
     }
-}
+
