@@ -2,7 +2,6 @@ package com.mjc.school;
 
 import com.mjc.school.controller.commands.Factory.CommandConstants;
 import com.mjc.school.controller.commands.Factory.CommandFactory;
-import com.mjc.school.controller.implementation.NewsController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
