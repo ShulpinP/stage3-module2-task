@@ -11,7 +11,7 @@ import java.util.List;
 @org.mapstruct.Mapper
 public interface NewsMapper {
     @Mappings({@Mapping(
-            target = "creationDate",
+            target = "createDate",
             ignore = true
     ), @Mapping(
             target = "lastUpdateDate",
